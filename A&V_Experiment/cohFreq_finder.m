@@ -1,4 +1,5 @@
 function [cohFreq_dir] = cohFreq_finder(dir_dataout, audInfo)
+% Test
     if  strcmp(dir_dataout(1,1), 'Trial #')
         [cnt, uniq] = hist(cell2mat(dir_dataout(2:end,8)), unique(cell2mat(dir_dataout(2:end,8))));
     else
